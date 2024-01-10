@@ -77,5 +77,12 @@ $cuccia2->set_dimensioni('300x200x150');
 $cuccia2->set_colore('red');
 $cuccia2->set_number('8');
 $cuccia2->setPricetot();
-var_dump($catalogo)
+var_dump($catalogo);
+
+try{
+    $result = $food1->ceck_food_scad(2024-11-10);
+        echo "Prodotto consumabile";
+    } catch (Exception $e){
+        echo 'errore!';
+    }
 ?>

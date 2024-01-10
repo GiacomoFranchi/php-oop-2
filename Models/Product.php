@@ -49,4 +49,6 @@ class Product extends Category {
     public function get_number(){
         return $this->number;
     }
+
 }
+
