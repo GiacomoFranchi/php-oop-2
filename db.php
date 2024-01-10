@@ -83,6 +83,6 @@ try{
     $result = $food1->ceck_food_scad(2024-11-10);
         echo "Prodotto consumabile";
     } catch (Exception $e){
-        echo 'errore!';
+        echo 'Prodotto scaduto';
     }
 ?>
