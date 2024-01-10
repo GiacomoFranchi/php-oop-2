@@ -1,12 +1,17 @@
 <?php
 
 require_once __DIR__ . "/Category.php";
+require_once __DIR__ . '/../Traits/Pricetot.php';
 
 class Product extends Category {
+
+    use Pricetot;
+
     protected $type;
     protected $name;
     protected $price;
     protected $poster;
+    protected int $number;
 
 /*SET */
     public function set_type($_type){
@@ -24,6 +29,9 @@ class Product extends Category {
     public function set_name($_name){
         $this->name = $_name;
     }
+    public function set_number($_number) {
+        $this->number = $_number;
+    }
     
 /*GET */
     public function get_type(){
@@ -36,6 +44,9 @@ class Product extends Category {
         return $this->name;
     }
     public function get_poster(){
-        $this->poster;
+        return $this->poster;
+    }
+    public function get_number(){
+        return $this->number;
     }
 }

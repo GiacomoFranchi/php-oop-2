@@ -10,6 +10,8 @@ class Food extends Product {
     public function set_food_scad($_food_scad){
         if(date('Y-m-d') < $_food_scad){
         $this->food_scad = $_food_scad;
+        } else{
+            $this->food_scad = 'è scaduto';
         }
     }
 

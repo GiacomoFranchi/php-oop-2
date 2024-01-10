@@ -11,6 +11,7 @@
                    <p></p><?php echo $product->getAnimal() ?> <i class="<?php echo $product->getIcon()?>"> </i></p>
                    <span>Prezzo:</span>
                    <h4><?php echo $product->get_price() ?>£</h4>
+                   <h4>Pezzi disponibili:<?php echo $product->get_number() ?> </h4>
             
                 <?php if(is_a($product, 'Cuccia')){?>
                     <span>MOdello cuccia</span>
