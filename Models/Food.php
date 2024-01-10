@@ -13,9 +13,7 @@ class Food extends Product {
         }
     }
 
-    public function get_food_scad($_food_scad){
-        if(date('Y-m-d') < $_food_scad){
-        return $this->food_scad = $_food_scad;
-        }
+    public function get_food_scad(){    
+        return $this->food_scad ;
     }
 }

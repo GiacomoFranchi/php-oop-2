@@ -7,6 +7,7 @@ class Product extends Category {
     protected $name;
     protected $price;
     protected $poster;
+
 /*SET */
     public function set_type($_type){
         $this->type = $_type;
@@ -23,17 +24,18 @@ class Product extends Category {
     public function set_name($_name){
         $this->name = $_name;
     }
+    
 /*GET */
-    public function get_type($_type){
-        return $this->type = $_type;
+    public function get_type(){
+        return $this->type;
+    }   
+    public function get_price(){
+        return $this->price;
     }
-    public function get_price($_price){
-        return $this->price = number_format($_price, 2);
+    public function get_name(){
+        return $this->name;
     }
-    public function get_name($_name){
-        return $this->name = $_name;
-    }
-    public function get_poster($_poster){
-        $this->poster = $_poster;
+    public function get_poster(){
+        $this->poster;
     }
 }

@@ -19,13 +19,13 @@ class Cuccia extends Product {
         $this->colore = $_colore;
     }
 /*GET */
-    public function get_modello($_modello){
-        return $this->modello = $_modello;
+    public function get_modello(){
+        return $this->modello ;
     }
-    public function get_dimensioni($_dimensioni){
-        return $this->dimensioni = $_dimensioni;
+    public function get_dimensioni(){
+        return $this->dimensioni;
     }
-    public function get_colore($_colore){
-        return $this->colore = $_colore;
+    public function get_colore(){
+        return $this->colore;
     }
 }
